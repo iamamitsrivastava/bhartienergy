@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ProcessSteps from '@/components/ProcessSteps';
 
 export default function Home() {
   return (
@@ -276,39 +277,7 @@ export default function Home() {
           <h2 className="section-title">Execution Process</h2>
           <p>A systematic engineering and execution flow to build robust wind energy infrastructure.</p>
           
-          <div className="process-steps">
-            <div className="process-line"></div>
-            
-            <div className="process-step">
-              <div className="step-icon active"><MapPin size={24} /></div>
-              <h4>01. Site Assessment</h4>
-              <p>Topographic surveys, access route feasibility, geotechnical & soil bearing checks and micro-siting confirmation.</p>
-            </div>
-            
-            <div className="process-step">
-              <div className="step-icon"><PenTool size={24} /></div>
-              <h4>02. Planning & Engineering</h4>
-              <p>In-house modeling, crane selection, transportation logistics layout and foundation civil design validation.</p>
-            </div>
-            
-            <div className="process-step">
-              <div className="step-icon"><HardHat size={24} /></div>
-              <h4>03. Site Preparation</h4>
-              <p>Access road grading, crane pad construction, laydown yard clearing and concrete batch plant setting.</p>
-            </div>
-            
-            <div className="process-step">
-              <div className="step-icon"><Settings size={24} /></div>
-              <h4>04. Installation & Erection</h4>
-              <p>Tower section stacking, nacelle positioning, blade rotor assembly & electrical panel connections.</p>
-            </div>
-            
-            <div className="process-step">
-              <div className="step-icon"><ClipboardCheck size={24} /></div>
-              <h4>05. Inspection & Handover</h4>
-              <p>Test check-runs, pre-testing and commissioning tests, final quality auditing and operational handover.</p>
-            </div>
-          </div>
+          <ProcessSteps />
         </div>
       </section>
 
